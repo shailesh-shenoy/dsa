@@ -4,7 +4,9 @@ public interface List<E> {
 
     void add(E el);
 
-    void add(int index, E el);
+    void addFirst(E el);
+
+    boolean add(int index, E el);
 
     void clear();
 
@@ -17,6 +19,10 @@ public interface List<E> {
     boolean isEmpty();
 
     int lastIndexOf(E el);
+
+    E removeFirst();
+
+    E removeLast();
 
     boolean remove(E el);
 
